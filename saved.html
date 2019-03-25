@@ -1,0 +1,35 @@
+
+    <!DOCTYPE html>
+	<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="gerald.css">
+		<title>whereDataIsSaved</title>
+	</head>
+	<body style="color:white;padding: 10%;background-color:rgb(120, 120, 120)";
+	">
+		<h1 style="background-color:rgb(60, 60, 60);">YOU SAVED THE FOLLOWING INFORMATION</h1>
+		<h2>PROJECTS</h2>
+		
+		<script type="text/javascript">
+			 
+			
+			
+			 document.write(" <p> <h2>NAME:</h2>  " + localStorage.pname + " </p> ");
+             document.write(" <p> <h2>DESCRIPTION:</h2> " + localStorage.pdescription + " </p>");
+             document.write(" <p> <h2>DATE:</h2>  " + localStorage.dateline + " </p> ");
+             
+            
+		</script>
+		<h2>WORK EXPRIENCE</h2>
+          
+		 <script type="text/javascript">
+		 	
+		 	document.write(" <p> <h2>WORK:</h2> " + localStorage.wname + " </p>");
+            document.write(" <p> <h2>DESCRIPTION:</h2> " + localStorage.wdescription + " </p> ");
+            document.write(" <p> <h2>DATE:</h2>  " + localStorage.wdateline + " </p>");
+            
+          
+		 </script>
+	 <a href="home.html">Go Back Home</a>  
+	</body>
+	</html>

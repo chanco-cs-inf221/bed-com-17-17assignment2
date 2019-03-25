@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    
+    <title>savingData</title>
+    <link rel="stylesheet" type="text/css" href="gerald2.css">
+    <script type="text/javascript" src="gerald.js"></script>
+</head>
+<body>
+	<header><h2>GERALD KACHITSA<h2></header>
+        
+        <div class="image">
+            <img src="gerald1.jpg">
+            <p style="margin-top:3%;padding-left: 300px">
+
+                 <a style="background-color:white;color:green;"href=http://www.facebook.com>Facebook-</a>
+                <a style="background-color:white;color:green;"href=http://www.github.com>GitHub</a>
+               <a style="background-color:white;color:green;" href=http://ggkachitsa@gmail.com/GeraldKachitsa>-Email</a>
+         </p>
+
+      </div>
+
+    <form onsubmit="load()">
+    	<h2>Did You Participate In Any Project?</h2>
+    	<div class="project">
+    	<p class="name">
+    		<label for="name">What was the name of the project</label><br />
+    		<input style="background-color:rgb(150 150 150);color:white";type="text" name="pname" id="pname" value="">
+    	</p>
+    	
+    	<p class="pdescription">
+    		<label for="pd">Describe Your Project</label><br />
+    		<textarea style="background-color:rgb(150 150 150);color:white"; id="pdescription" ></textarea>
+    	</p>
+    	<p class="Date">
+    		<label for="datelines">When did you take part in this project</label><br />
+    		<input style="background-color:rgb(150 150 150);color:white"; type="date" name="pdateline" id="dateline" value="" >
+    	</p>
+    	
+    	
+    	<p class="buttons">
+    		<input style="background-color:rgb(150 150 150);color:white"; type="submit" name="Submit" id="Submit" value="save" onclick="save()">
+                &nbsp;
+    		<input style="background-color:rgb(150 150 150);color:white"; type="reset" name="Submit" id="clear" value="clear" onclick="clean()">
+            <a href="saved.html">SAVED PROJECTS</a>
+        </p>
+        </div>
+    </form>
+
+    <form onsubmit="work()">
+    	<h2>WORK EXPRIENCE</h2>
+    	<div class="works">
+    	<p class="wname">
+    		<label for="name">Enter company Name</label><br />
+    		<input style="background-color:rgb(150 150 150);color:white";type="text" name="wname" id="wname" value="">
+    	</p>
+    	
+    	<p class="wdescription">
+    		<label for="pd">Describe your work</label><br />
+    		<textarea style="background-color:rgb(150 150 150);color:white";id="wdescription"></textarea>
+    	</p>
+    	<p class="year">
+    		<label for="datelines"> When did you last work for this company</><br />
+    		<input type="date" name="wdateline" id="wdateline" value="" style="background-color:rgb(150 150 150);color:white">
+    	</p>
+    	
+    	
+    	<p class="buttons">
+    		<input style="background-color:rgb(90 90 90);color:white"type="submit" name="Submit" id="Submit" value="save" onclick="show()">
+                &nbsp;
+    		<input style="background-color:rgb(80 80 80);color:white; type="reset" name="Submit" id="clear" value="clear" onclick="cleared()">
+             <a href="saved.html">SAVED WORK EXPRIENCE</a>
+        </p>
+        </div>
+    </form>
+   
+
+</body>
+</html>
